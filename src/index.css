@@ -1,0 +1,138 @@
+@import 'reset.css';
+
+.root-wrap {
+    position: absolute;
+    top : 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.header-container {
+    background-color: #032541;
+}
+
+.header-wrap {
+    height: 64px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-left-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-left-wrap ul{
+    display: flex;
+    margin-left: 16px;
+    align-items: center;
+}
+
+.header-left-wrap li{
+    margin-left: 14px;
+    padding : 8px;
+    display : flex;
+    align-items: center;
+}
+
+.header-nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin : 0 auto;
+    padding: 32px 0;
+}
+
+.movie-container {
+    width: 225px;
+    margin: 15px;
+    background-color: #373B69;
+    color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-container img{max-width: 100%;}
+
+.movie-info{
+    position: relative;
+    display: flex;
+    bottom: 0;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px ;
+    box-sizing: border-box;
+}
+
+.movie-info h4{
+    margin: 0;
+}
+
+.movie-info span{
+    margin-left: 3px;
+}
+
+.app-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tv-container {
+    width: 225px;
+    margin: 15px;
+    background-color: #373B69;
+    color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-container img{max-width: 100%;}
+
+.tv-info{
+    position: relative;
+    display: flex;
+    bottom: 0;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px ;
+    box-sizing: border-box;
+}
+
+.tv-info h4{
+    margin: 0;
+}
+
+.tv-info span{
+    margin-left: 3px;
+}
+
+.login-btn{
+    background-color:white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    width: 80px;
+    height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-info{
+    color: white;
+    margin-left: 10px;
+    font-weight: 500;
+}
