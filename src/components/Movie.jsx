@@ -1,30 +1,22 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
-const Base_url = 'https://image.tmdb.org/t/p/w1280/';
+export const Base_url = 'https://image.tmdb.org/t/p/w1280/';
 
-function Movie({ title, poster_path, vote_average }) {
-    const navigate = useNavigate();
+export default function Movie( props ) {
+  const navigate = useNavigate();
+
+  const onClickMovie = () => {
+    navigate(`/movie/${props.title}`, { state: props });
+  };
   
-    const onClickPoster = () => {
-      navigate(`/movie/${encodeURIComponent(title)}`, {
-        state: {
-          Base_url: Base_url, // 객체로 감싸지 않음
-          poster_path: poster_path, // 객체로 감싸지 않음
-        },
-      });
-    };
-  
-    return (
-      <div onClick={onClickPoster} className="movie-container">
-        <img src={Base_url + poster_path} alt="영화 포스터" />
-        <div className="movie-info">
-          <h4>{title}</h4>
-          <span>{vote_average}</span>
-        </div>
+  return (
+    <div className="movie-container" onClick={onClickMovie}>
+      <img src={Base_url + props.poster_path} alt="영화 포스터" />
+      <div className="movie-info">
+        <h4>{props.title}</h4>
+        <span>{props.vote_average}</span>
       </div>
-    );
-  }
-  
-
-export default Movie;
+    </div>
+  );
+}

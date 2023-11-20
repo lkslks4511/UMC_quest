@@ -4,6 +4,7 @@ import Celebrity from "./pages/Celebrity";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import LoginControl from "./pages/LoginControl";
+import MovieDetail from "./pages/MovieDetail";
 import Movies from "./pages/Movies";
 import NotFound from "./pages/NotFound";
 import Tv from './pages/Tv'
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<Movies />} />
+        <Route path="/movie/:title" element={<MovieDetail />} />
         <Route path="/tv" element={<Tv />} />
         <Route path="/person" element={<Celebrity />} />
         <Route path="/login" element={<LoginControl />} />

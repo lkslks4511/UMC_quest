@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import AdPage from './AdPage';
+import AdPage from '../pages/AdPage';
 
 const App = () => {
     const [showAd, setShowAd] = useState(true);

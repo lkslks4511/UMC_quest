@@ -5,7 +5,7 @@ import { movie_dummy } from "../movieDummy"
 export default function Movies() {
   return (
     <div>
-      <div className="app-container">
+      <div className="movies-container">
         {movie_dummy.results.map((item) => (
           <Movie
             key={item.id} 
