@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Celebrity from "./pages/Celebrity";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import LoginControl from "./pages/LoginControl";
+import LogIn from "./components/LogIn";
 import MovieDetail from "./pages/MovieDetail";
 import Movies from "./pages/Movies";
 import NotFound from "./pages/NotFound";
@@ -20,7 +20,7 @@ function App() {
         <Route path="/movie/:title" element={<MovieDetail />} />
         <Route path="/tv" element={<Tv />} />
         <Route path="/person" element={<Celebrity />} />
-        <Route path="/login" element={<LoginControl />} />
+        <Route path="/login" element={<LogIn />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
